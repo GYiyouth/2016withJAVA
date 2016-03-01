@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// 数组复制
+		int[] arr1 = new int [10];
+		for(int i =0;i<arr1.length;i++)
+		{
+			arr1[i]=i;
+		System.out.println(arr1[i]);
+	
+		}
+		int []arr2 = Arrays.copyOfRange(arr1, 0, 3); // 数组复制
+		for(int ret:arr2)
+			System.out.print(ret+" ");
+	
+		// 数组排序
+		ArrayList<Integer> arr3 = new ArrayList<Integer>();
+		Scanner in = new Scanner(System.in);
+		System.out.println("输入数字，以任意其他符号结束");
+		boolean ctn = true;
+		while( ctn ){
+			try{
+				arr3.add(in.nextInt());
+			}
+			catch(Exception e){
+				ctn = false;
+			}
+		} // while构造数组
+		for( int i : arr3)
+			System.out.print(i+" ");
+		// 直接插入排序
+		{
+			int ret =0 ,p=0;
+		}
+		Collections.sort(arr3 );
+		System.out.println("\n"+arr3);
+	} // main
+} // class main
