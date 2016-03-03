@@ -58,11 +58,11 @@ public class FoxAndRabbit {
 		for ( int i=0; i<steps; i++ ) {
 			step();
 			theView.repaint();
-			try {
-				Thread.sleep(200);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
+//			try {
+//				Thread.sleep(200);
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
 		}
 	}
 	
